@@ -7,5 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  site: 'https://samuelmedina07.github.io',
+  base: 'samuel-ernesto-portfolio',
 });
