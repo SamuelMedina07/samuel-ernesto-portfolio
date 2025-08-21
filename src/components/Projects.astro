@@ -4,7 +4,10 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import GoogleCloud from "./icons/GoogleCloud.astro"
-let base = "samuel-ernesto-portfolio"
+import Java from "./icons/Java.astro"
+import MySQL from "./icons/MySQL.astro"
+import Jasper from "./icons/Jasper.astro"
+let base = "/samuel-ernesto-portfolio"
 
 const TAGS = {
   
@@ -18,21 +21,35 @@ const TAGS = {
     class: "bg-white text-black",
     icon: GoogleCloud,
   },
+  JAVA: {
+    name: "Java",
+    class: "bg-white text-black",
+    icon: Java,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-white text-black",
+    icon: MySQL,
+  },
+  JRXML: {
+    name: "JasperReports",
+    class: "bg-white text-black",
+    icon: Jasper,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
-    description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "samuel-ernesto-portfolio/projects/Pro_Bosques.webp",
-    tags: [ TAGS.TAILWIND, TAGS.GOOGLECLOUD],
+   title: "Sistema de Gestión Escolar y Colegio",
+description:
+  "Proyecto desarrollado diseñado para la gestión integral de alumnos, calificaciones, asistencias, empleados, materias, consultas, usuarios y reportes. Este sistema demuestra mi experiencia en arquitectura de software, manejo de bases de datos relacionales y desarrollo de aplicaciones de escritorio escalables.",
+      github:"",
+    image: base +"/projects/Pro_Bosques.webp",
+    tags: [ TAGS.JAVA, TAGS.MYSQL,TAGS.JRXML],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
+    title: "Sistema de Gestión Escolar y Colegio",
+description:
+  "Aplicación de escritorio desarrollada en Java con NetBeans, conectada a MySQL y con reportes generados en iReport. Permite gestionar alumnos, calificaciones, asistencias, empleados, materias, grados y usuarios. Implementa el patrón MVC y genera reportes PDF profesionales. Proyecto académico con arquitectura modular y escalable.",
     link: "https://adventjs.dev",
     image: "",
     tags: [ TAGS.TAILWIND],
