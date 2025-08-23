@@ -1,16 +1,11 @@
-export function ruta(){
+export const repository = "samuel-ernesto-portfolio"
 
-let base = "samuel-ernesto-portfolio"
-return base;
+export function imagesRender(img){
+
+ let image = `/${repository}/projects/${img}`
+
+ return image
+
 
 }
-
-export function rute(){
-
-let base = "samuel-ernesto-portfolio/projects"
-return base;
-
-}
-
-
 

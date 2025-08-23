@@ -1,105 +1,47 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-import GoogleCloud from "./icons/GoogleCloud.astro"
-import Java from "./icons/Java.astro"
-import MySQL from "./icons/MySQL.astro"
-import Jasper from "./icons/Jasper.astro"
-import root from "@/root.js";
+import {imagesRender} from "@/root.js"
+import ProyectsDB from "@/db/proyectsdb.js"
 
-const TAGS = {
-  
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-  GOOGLECLOUD: {
-    name: "Google Cloud",
-    class: "bg-white text-black",
-    icon: GoogleCloud,
-  },
-  JAVA: {
-    name: "Java",
-    class: "bg-white text-black",
-    icon: Java,
-  },
-  MYSQL: {
-    name: "MySQL",
-    class: "bg-white text-black",
-    icon: MySQL,
-  },
-  JRXML: {
-    name: "JasperReports",
-    class: "bg-white text-black",
-    icon: Jasper,
-  },
-}
-const PROJECTS = [
-  {
-   title: "Sistema de Gestión Escolar y Colegio",
-description:
-  "Proyecto desarrollado diseñado para la gestión integral de alumnos, calificaciones, asistencias, empleados, materias, consultas, usuarios y reportes. Este sistema demuestra mi experiencia en arquitectura de software, manejo de bases de datos relacionales y desarrollo de aplicaciones de escritorio escalables.",
-      github:"",
-    image: `/${root}/projects/Pro_Bosques.webp`,
-    tags: [ TAGS.JAVA, TAGS.MYSQL,TAGS.JRXML],
-  },
-  {
-    title: "Sistema de Gestión Escolar y Colegio",
-description:
-  "Aplicación de escritorio desarrollada en Java con NetBeans, conectada a MySQL y con reportes generados en iReport. Permite gestionar alumnos, calificaciones, asistencias, empleados, materias, grados y usuarios. Implementa el patrón MVC y genera reportes PDF profesionales. Proyecto académico con arquitectura modular y escalable.",
-    link: "https://adventjs.dev",
-    image: "",
-    tags: [ TAGS.TAILWIND],
-  },
-]
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    ProyectsDB.map((proyect) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt={title} class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt={proyect.title} class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={imagesRender(proyect.image)} />
     </div>
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
     <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
+      {proyect.title}
     </h3>
     <div class="flex flex-wrap mt-2">
       <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
+       {
+  proyect.tags.map((tag) => {
+    const Icon = tag.icon;
+
+    return (
+      <li>
+        <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+          <Icon class="size-4" />
+          {tag.name}
+        </span>
+      </li>
+    );
+  })
+}
         </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{proyect.description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-              
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
+          {proyect.github && ( <LinkButton href={proyect.github}> <GitHub class="size-6" /> Code </LinkButton> )} {proyect.link && ( <LinkButton href={proyect.link}> <Link class="size-4" /> Preview </LinkButton> )}
         </footer>
     </div>
   </div>
@@ -107,6 +49,8 @@ description:
     ))
   }
 </div>
+
+
 
 
 
