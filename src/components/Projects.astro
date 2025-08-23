@@ -7,7 +7,7 @@ import GoogleCloud from "./icons/GoogleCloud.astro"
 import Java from "./icons/Java.astro"
 import MySQL from "./icons/MySQL.astro"
 import Jasper from "./icons/Jasper.astro"
-let base = "/samuel-ernesto-portfolio"
+import root from "@/root.js";
 
 const TAGS = {
   
@@ -43,7 +43,7 @@ const PROJECTS = [
 description:
   "Proyecto desarrollado diseñado para la gestión integral de alumnos, calificaciones, asistencias, empleados, materias, consultas, usuarios y reportes. Este sistema demuestra mi experiencia en arquitectura de software, manejo de bases de datos relacionales y desarrollo de aplicaciones de escritorio escalables.",
       github:"",
-    image: base +"/projects/Pro_Bosques.webp",
+    image: `/${root}/projects/Pro_Bosques.webp`,
     tags: [ TAGS.JAVA, TAGS.MYSQL,TAGS.JRXML],
   },
   {
@@ -63,7 +63,7 @@ description:
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt={title} class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
