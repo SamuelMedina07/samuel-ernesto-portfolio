@@ -2,55 +2,100 @@
 import GitHub from "./icons/GitHub.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-import {imagesRender} from "@/root.js"
+import { imagesRender } from "@/root.js"
 import ProyectsDB from "@/db/proyectsdb.js"
 
 ---
 
-<div class="flex flex-col gap-y-16">
+<div id="projects-container" class="flex flex-col gap-y-16">
   {
-    ProyectsDB.map((proyect) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt={proyect.title} class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={imagesRender(proyect.image)} />
-    </div>
-  </div>
+    ProyectsDB.map((proyect, i) => (
+      <article
+        class={`project-card ${i > 2 ? 'hidden' : ''} flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0`}
+      >
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt={proyect.title}
+              class="object-fill object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              src={imagesRender(proyect.image)}
+            />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {proyect.title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-       {
-  proyect.tags.map((tag) => {
-    const Icon = tag.icon;
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">{proyect.title}</h3>
 
-    return (
-      <li>
-        <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-          <Icon class="size-4" />
-          {tag.name}
-        </span>
-      </li>
-    );
-  })
-}
-        </ul>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {
+                proyect.tags.map((tag) => {
+                  const Icon = tag.icon
+                  return (
+                    <li>
+                      <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                        <Icon class="size-4" />
+                        {tag.name}
+                      </span>
+                    </li>
+                  )
+                })
+              }
+            </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{proyect.description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {proyect.github && ( <LinkButton href={proyect.github}> <GitHub class="size-6" /> Code </LinkButton> )} {proyect.link && ( <LinkButton href={proyect.link}> <Link class="size-4" /> Preview </LinkButton> )}
-        </footer>
-    </div>
-  </div>
-</article>
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {proyect.description}
+            </div>
+
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {proyect.github && (
+                <LinkButton href={proyect.github}>
+                  <GitHub class="size-6" /> Code
+                </LinkButton>
+              )}
+              {proyect.link && (
+                <LinkButton href={proyect.link}>
+                  <Link class="size-4" /> Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
     ))
   }
 </div>
 
+<!-- Botón -->
+<div class="flex justify-center mt-8">
+  <button
+    id="toggle-projects"
+    class="px-4 py-2 text-sm font-semibold text-white rounded-lg bg-gray-800 hover:bg-gray-700 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-gray-300"
+    aria-expanded="false"
+  >
+    Mostrar más proyectos
+  </button>
+</div>
 
+<script>
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("toggle-projects")!;
+    const cards = Array.from(document.querySelectorAll("#projects-container .project-card"))!;
+    
+    let showingAll = false;
 
+    btn.addEventListener("click", () => {
+      showingAll = !showingAll;
 
+      cards.forEach((card, i) => {
+        if (i > 2) {
+          card.classList.toggle("hidden", !showingAll);
+        }
+      });
+
+      btn.textContent = showingAll ? "Mostrar menos" : "Mostrar más proyectos";
+      btn.setAttribute("aria-expanded", String(showingAll));
+    });
+  });
+</script>
