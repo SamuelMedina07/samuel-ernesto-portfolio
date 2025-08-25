@@ -81,7 +81,7 @@ export const TAGS = {
   },
   DRIVE: {
     name: "Google Drive",
-    class: "bg-[#0F9D58] text-white", // verde Drive
+    class: "bg-white text-black", // verde Drive
     icon: Drive,
   },
 }
