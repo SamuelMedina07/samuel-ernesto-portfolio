@@ -11,9 +11,33 @@ description:
   {
     title: "Sistema de Gestión de Abarrotes",
 description:
-  "Aplicación de escritorio desarrollada en Java con NetBeans, conectada a MySQL y con reportes generados en iReport. Permite gestionar alumnos, calificaciones, asistencias, empleados, materias, grados y usuarios. Implementa el patrón MVC y genera reportes PDF profesionales. Proyecto académico con arquitectura modular y escalable.",
+  "Aplicación de escritorio creada en Java con NetBeans, conectada a MySQL para el manejo de inventarios, ventas y clientes. Incluye reportes personalizados generados con iReport (JasperReports), optimizando el control administrativo de un negocio de abarrotes.",
     link: "",
     image: "Abarrotes_Pro.webp",
     tags: [TAGS.JAVA, TAGS.MYSQL, TAGS.JRXML],
+  },
+  {
+    title: "Remodelación de Laboratorio Informático",
+description:
+  "Proyecto de actualización tecnológica en un laboratorio escolar. Implementación de estaciones con NComputing, integración de equipos con Windows y Linux, y optimización de la conectividad mediante una red WiFi estable y segura, reduciendo costos y aumentando la eficiencia.",
+    link: "",
+    image: "Lab_Pro.webp",
+    tags: [TAGS.NCOMPUTING, TAGS.WINDOWS, TAGS.LINUX, TAGS.WIFI],
+  },
+  {
+    title: "Modernización de Escudos del Instituto",
+description:
+  "Diseño y vectorización digital de escudos institucionales, utilizando Adobe Illustrator y Photoshop. El trabajo permitió actualizar y estandarizar la identidad visual del instituto para su uso en materiales impresos y digitales.",
+    link: "",
+    image: "Escu_Pro.webp",
+    tags: [TAGS.ILLUSTADOR,TAGS.PHOTOSHOP],
+  },
+  {
+    title: "Automatización de Calificaciones en la Nube",
+description:
+  "Sistema basado en hojas inteligentes de Excel conectadas a Google Drive, que permitió automatizar el cálculo y almacenamiento de calificaciones escolares. La solución facilitó la colaboración entre docentes y el acceso seguro a la información desde cualquier lugar.",
+    link: "",
+    image: "Auto_Pro.webp",
+    tags: [TAGS.WORD,TAGS.EXCEL,TAGS.DRIVE],
   }
   ]
