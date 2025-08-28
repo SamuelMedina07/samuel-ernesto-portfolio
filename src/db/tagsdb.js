@@ -13,6 +13,9 @@ import Wifi from "@/components/icons/Wifi.astro"
 import Word from "@/components/icons/Word.astro"
 import Excel from "@/components/icons/Excel.astro"
 import Drive from "@/components/icons/Drive.astro"
+import Html from "@/components/icons/Html.astro"
+import Css from "@/components/icons/Css.astro"
+import JavaScript from "@/components/icons/JavaScript.astro"
 export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -56,12 +59,12 @@ export const TAGS = {
   },
   WINDOWS: {
     name: "Windows",
-    class: "bg-[#0078D6] text-white", // azul Windows
+    class: "bg-[#00508f] text-white", // azul Windows
     icon: Windows,
   },
   LINUX: {
     name: "Linux",
-    class: "bg-[#FCC624] text-black", // amarillo Tux
+    class: "bg-[#ffbf00] text-black", // amarillo Tux
     icon: Linux,
   },
   WIFI: {
@@ -83,5 +86,20 @@ export const TAGS = {
     name: "Google Drive",
     class: "bg-white text-black", // verde Drive
     icon: Drive,
+  },
+  HTML: {
+    name: "HTML5",
+    class: "bg-[#F06529] text-black", // verde Drive
+    icon: Html,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#2565AE] text-white", // verde Drive
+    icon: Css,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F0DB4F] text-black", // verde Drive
+    icon: JavaScript,
   },
 }

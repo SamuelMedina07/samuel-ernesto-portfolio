@@ -9,12 +9,12 @@ description:
     tags: [ TAGS.JAVA, TAGS.MYSQL, TAGS.JRXML],
   },
   {
-    title: "Sistema de Gestión de Abarrotes",
+    title: "Automatización de Calificaciones en la Nube",
 description:
-  "Aplicación de escritorio creada en Java con NetBeans, conectada a MySQL para el manejo de inventarios, ventas y clientes. Incluye reportes personalizados generados con iReport (JasperReports), optimizando el control administrativo de un negocio de abarrotes.",
+  "Sistema basado en hojas inteligentes de Excel conectadas a Google Drive, que permitió automatizar el cálculo y almacenamiento de calificaciones escolares. La solución facilitó la colaboración entre docentes y el acceso seguro a la información desde cualquier lugar.",
     link: "",
-    image: "Abarrotes_Pro.webp",
-    tags: [TAGS.JAVA, TAGS.MYSQL, TAGS.JRXML],
+    image: "Auto_Pro.webp",
+    tags: [TAGS.WORD,TAGS.EXCEL,TAGS.DRIVE],
   },
   {
     title: "Remodelación de Laboratorio Informático",
@@ -33,11 +33,20 @@ description:
     tags: [TAGS.ILLUSTADOR,TAGS.PHOTOSHOP],
   },
   {
-    title: "Automatización de Calificaciones en la Nube",
+    title: "'Payasita Lazuli' Pagina Web e Isotipo ",
 description:
-  "Sistema basado en hojas inteligentes de Excel conectadas a Google Drive, que permitió automatizar el cálculo y almacenamiento de calificaciones escolares. La solución facilitó la colaboración entre docentes y el acceso seguro a la información desde cualquier lugar.",
+  "",
     link: "",
-    image: "Auto_Pro.webp",
-    tags: [TAGS.WORD,TAGS.EXCEL,TAGS.DRIVE],
+    github: "https://github.com/SamuelMedina07/Payasita_Lazuli",
+    image: "Lazuli_Pro.webp",
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT,TAGS.ILLUSTADOR],
+  },
+  {
+    title: "Sistema de Gestión de Abarrotes",
+description:
+  "Aplicación de escritorio creada en Java con NetBeans, conectada a MySQL para el manejo de inventarios, ventas y clientes. Incluye reportes personalizados generados con iReport (JasperReports), optimizando el control administrativo de un negocio de abarrotes.",
+    link: "",
+    image: "Abarrotes_Pro.webp",
+    tags: [TAGS.JAVA, TAGS.MYSQL, TAGS.JRXML],
   }
   ]
