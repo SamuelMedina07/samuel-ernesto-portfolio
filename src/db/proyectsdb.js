@@ -35,9 +35,8 @@ description:
   {
     title: "'Payasita Lazuli' Pagina Web e Isotipo ",
 description:
-  "",
+  "Diseño y desarrollo de una página web personalizada para la marca 'Payasita Lazuli'. El proyecto incluyó la creación de un isotipo original en Adobe Illustrator y la implementación de la web con HTML, CSS y JavaScript, logrando una identidad visual única y una experiencia atractiva para los visitantes.",
     link: "",
-    github: "https://github.com/SamuelMedina07/Payasita_Lazuli",
     image: "Lazuli_Pro.webp",
     tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT,TAGS.ILLUSTADOR],
   },
