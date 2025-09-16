@@ -16,6 +16,9 @@ import Drive from "@/components/icons/Drive.astro"
 import Html from "@/components/icons/Html.astro"
 import Css from "@/components/icons/Css.astro"
 import JavaScript from "@/components/icons/JavaScript.astro"
+import Apache from "@/components/icons/Apache.astro"
+import LetsEncrypt from "@/components/icons/LetsEncrypt.astro"
+import FileZilla from "@/components/icons/FileZilla.astro"
 export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -23,18 +26,18 @@ export const TAGS = {
     icon: Tailwind,
   },
   GOOGLECLOUD: {
-    name: "Google Cloud",
-    class: "bg-white text-black", // azul Google
+    name: "GoogleCloud",
+    class: "bg-white text-black",
     icon: GoogleCloud,
   },
   JAVA: {
     name: "Java",
-    class: "bg-white text-black", // naranja oficial
+    class: "bg-[#ED8B00] text-black",
     icon: Java,
   },
   MYSQL: {
     name: "MySQL",
-    class: "bg-white text-black", // azul MySQL
+    class: "bg-[#4479A1] text-white", // azul MySQL
     icon: MySQL,
   },
   JRXML: {
@@ -102,4 +105,19 @@ export const TAGS = {
     class: "bg-[#F0DB4F] text-black", // verde Drive
     icon: JavaScript,
   },
+  APACHE:{
+     name: "Apache",
+    class: "bg-white text-black",
+    icon: Apache,
+  },
+  LETSENCRYPT:{
+     name: "Let'sEncrypt",
+    class: "bg-[#003A70] text-white",
+    icon: LetsEncrypt,
+  },
+  FILEZILLA:{
+    name:"FileZilla",
+    class:"bg-white text-black",
+    icon: FileZilla,
+  }
 }

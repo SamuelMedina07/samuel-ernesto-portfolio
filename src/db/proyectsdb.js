@@ -25,6 +25,14 @@ description:
     tags: [TAGS.NCOMPUTING, TAGS.WINDOWS, TAGS.LINUX, TAGS.WIFI],
   },
   {
+    title: "Implementación de Aplicación en la Nube",
+description:
+  "Despliegue de una aplicación web en servidores cloud utilizando Google Cloud. Configuración de Apache, MySQL y certificados SSL con Let's Encrypt, además de la gestión de archivos mediante FileZilla para garantizar seguridad y rendimiento.",
+    link: "",
+    image: "CloudApp_Pro.webp",
+    tags: [TAGS.GOOGLECLOUD,TAGS.LETSENCRYPT,TAGS.MYSQL,TAGS.APACHE,TAGS.FILEZILLA,],
+  },
+  {
     title: "Modernización de Escudos del Instituto",
 description:
   "Diseño y vectorización digital de escudos institucionales, utilizando Adobe Illustrator y Photoshop. El trabajo permitió actualizar y estandarizar la identidad visual del instituto para su uso en materiales impresos y digitales.",
