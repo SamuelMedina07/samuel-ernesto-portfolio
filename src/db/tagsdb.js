@@ -26,7 +26,7 @@ export const TAGS = {
     icon: Tailwind,
   },
   GOOGLECLOUD: {
-    name: "GoogleCloud",
+    name: "Google Cloud",
     class: "bg-white text-black",
     icon: GoogleCloud,
   },
@@ -111,7 +111,7 @@ export const TAGS = {
     icon: Apache,
   },
   LETSENCRYPT:{
-     name: "Let'sEncrypt",
+     name: "Let's Encrypt",
     class: "bg-[#003A70] text-white",
     icon: LetsEncrypt,
   },

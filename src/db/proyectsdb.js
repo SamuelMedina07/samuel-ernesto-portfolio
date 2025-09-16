@@ -9,12 +9,12 @@ description:
     tags: [ TAGS.JAVA, TAGS.MYSQL, TAGS.JRXML],
   },
   {
-    title: "Automatización de Calificaciones en la Nube",
+    title: "Implementación de Aplicación en la Nube",
 description:
-  "Sistema basado en hojas inteligentes de Excel conectadas a Google Drive, que permitió automatizar el cálculo y almacenamiento de calificaciones escolares. La solución facilitó la colaboración entre docentes y el acceso seguro a la información desde cualquier lugar.",
+  "Despliegue de una aplicación web en servidores cloud utilizando Google Cloud. Configuración de Apache, MySQL y certificados SSL con Let's Encrypt, además de la gestión de archivos mediante FileZilla para garantizar seguridad y rendimiento.",
     link: "",
-    image: "Auto_Pro.webp",
-    tags: [TAGS.WORD,TAGS.EXCEL,TAGS.DRIVE],
+    image: "CloudApp_Pro.webp",
+    tags: [TAGS.GOOGLECLOUD,TAGS.LETSENCRYPT,TAGS.MYSQL,TAGS.APACHE,TAGS.FILEZILLA],
   },
   {
     title: "Remodelación de Laboratorio Informático",
@@ -25,12 +25,12 @@ description:
     tags: [TAGS.NCOMPUTING, TAGS.WINDOWS, TAGS.LINUX, TAGS.WIFI],
   },
   {
-    title: "Implementación de Aplicación en la Nube",
+    title: "Automatización de Calificaciones en la Nube",
 description:
-  "Despliegue de una aplicación web en servidores cloud utilizando Google Cloud. Configuración de Apache, MySQL y certificados SSL con Let's Encrypt, además de la gestión de archivos mediante FileZilla para garantizar seguridad y rendimiento.",
+  "Sistema basado en hojas inteligentes de Excel conectadas a Google Drive, que permitió automatizar el cálculo y almacenamiento de calificaciones escolares. La solución facilitó la colaboración entre docentes y el acceso seguro a la información desde cualquier lugar.",
     link: "",
-    image: "CloudApp_Pro.webp",
-    tags: [TAGS.GOOGLECLOUD,TAGS.LETSENCRYPT,TAGS.MYSQL,TAGS.APACHE,TAGS.FILEZILLA,],
+    image: "Auto_Pro.webp",
+    tags: [TAGS.EXCEL,TAGS.WORD,TAGS.DRIVE],
   },
   {
     title: "Modernización de Escudos del Instituto",
