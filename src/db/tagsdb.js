@@ -19,6 +19,7 @@ import JavaScript from "@/components/icons/JavaScript.astro"
 import Apache from "@/components/icons/Apache.astro"
 import LetsEncrypt from "@/components/icons/LetsEncrypt.astro"
 import FileZilla from "@/components/icons/FileZilla.astro"
+import React from "@/components/icons/React.astro"
 export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -119,5 +120,10 @@ export const TAGS = {
     name:"FileZilla",
     class:"bg-white text-black",
     icon: FileZilla,
+  },
+  REACT:{
+    name:"React JSX",
+    class:"bg-[#23272f] text-white",
+    icon: React
   }
 }
