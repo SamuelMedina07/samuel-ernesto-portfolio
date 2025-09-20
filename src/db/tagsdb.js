@@ -20,6 +20,8 @@ import Apache from "@/components/icons/Apache.astro"
 import LetsEncrypt from "@/components/icons/LetsEncrypt.astro"
 import FileZilla from "@/components/icons/FileZilla.astro"
 import React from "@/components/icons/React.astro"
+import HomeAssistant from "@/components/icons/HomeAssistant.astro"
+import NodeRED from "@/components/icons/NodeRED.astro"
 export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -125,5 +127,15 @@ export const TAGS = {
     name:"React JSX",
     class:"bg-[#23272f] text-white",
     icon: React
+  },
+  HOMEASSISTANT:{
+     name:"Home Assistant",
+    class:"bg-[#c9f7fc] text-black",
+    icon: HomeAssistant
+  },
+  NODERED:{
+     name:"Node-RED",
+    class:"bg-white text-black",
+    icon: NodeRED
   }
 }

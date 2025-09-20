@@ -48,6 +48,13 @@ description:
     image: "Lazuli_Pro.webp",
     tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT,TAGS.ILLUSTADOR],
   },
+  /* {
+    title: "Dispensador de Agua Automático con ESP32 y Sensores",
+description:
+  "Proyecto IoT desarrollado con ESP32 y sensor ultrasónico HC-SR04 para detectar la proximidad. Controlado mediante un micro servo SG90 que acciona el dispensador de agua. El sistema fue montado en protoboard con piezas de adaptación y fijación, y se integró en el hogar inteligente usando Node-RED, Home Assistant y ESPHome para automatización y monitoreo en tiempo real.",
+    image: "ESP32_Pro.webp",
+    tags: [TAGS.HOMEASSISTANT,TAGS.NODERED],
+  }, */
   {
     title: "Sistema de Gestión de Abarrotes",
 description:
