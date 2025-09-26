@@ -33,6 +33,14 @@ description:
     tags: [TAGS.EXCEL,TAGS.WORD,TAGS.DRIVE],
   },
   {
+  title: "Ticket Master Clone",
+  description:
+    "Clon funcional de la plataforma TicketMaster desarrollado con React y Vite. Permite explorar eventos, ver detalles, simular la selección de boletos y gestionar el flujo de compra con una interfaz moderna. El objetivo del proyecto fue practicar la integración de componentes, manejo de estados y el diseño responsive utilizando JavaScript y CSS.",
+  link: "",
+  image: "TicketClone_Pro.webp",
+  tags: [TAGS.REACT, TAGS.VITE, TAGS.JAVASCRIPT, TAGS.CSS],
+},
+  {
     title: "Modernización de Escudos del Instituto",
 description:
   "Diseño y vectorización digital de escudos institucionales, utilizando Adobe Illustrator y Photoshop. El trabajo permitió actualizar y estandarizar la identidad visual del instituto para su uso en materiales impresos y digitales.",

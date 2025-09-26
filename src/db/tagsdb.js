@@ -22,6 +22,7 @@ import FileZilla from "@/components/icons/FileZilla.astro"
 import React from "@/components/icons/React.astro"
 import HomeAssistant from "@/components/icons/HomeAssistant.astro"
 import NodeRED from "@/components/icons/NodeRED.astro"
+import Vitejs from "@/components/icons/vitejs.astro"
 export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
@@ -125,8 +126,13 @@ export const TAGS = {
   },
   REACT:{
     name:"React JSX",
-    class:"bg-[#23272f] text-white",
+    class:"bg-[#23272F] text-white",
     icon: React
+  },
+   VITE:{
+    name:"Vitejs",
+    class:"bg-[#23272f] text-white",
+    icon: Vitejs
   },
   HOMEASSISTANT:{
      name:"Home Assistant",
